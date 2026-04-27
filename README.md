@@ -21,7 +21,6 @@ Multi-Channel Physical Integration: Modeled 6 concurrent channels—NO₂, CO, A
 📂 Repository Structure
 The project codebase is structured chronologically to reflect the research pipeline:
 
-Plaintext
 ├── Phase_1_Data_Engineering/
 │   ├── 01A_Sentinel5P_MODIS_Extraction.ipynb
 │   ├── 01B_ERA5_Wind_Extraction.ipynb
@@ -44,14 +43,15 @@ Plaintext
 🏆 Quantitative Ablation Results
 Evaluated on a 20% chronological hold-out test set (~500 days). The proposed Custom Conv-GRU achieved state-of-the-art spatial regression performance.
 
-Rank	Model Architecture	R² Score	MAE	MAPE
-1	Custom Deep Conv-GRU (Proposed)	0.8305	0.001381	3.37%
-2	Adv. ConvLSTM (Physics-Weighted)	0.7890	0.001638	4.06%
-3	AlexNet (Spatial)	0.7200	0.001941	4.78%
-4	ResNet-50 (Spatial)	0.6879	0.001952	4.62%
-5	U-Net (Spatial)	0.6704	0.001996	4.74%
-6	Standard ConvLSTM (Baseline)	0.6506	0.001925	4.47%
-7	ResNet-101 (Spatial)	0.6323	0.002102	4.94%
+Rank,Model Architecture,R² Score,MAE,MAPE
+1,Custom Deep Conv-GRU (Proposed),0.8305,0.001381,3.37%
+2,Adv. ConvLSTM (Physics-Weighted),0.7890,0.001638,4.06%
+3,AlexNet (Spatial),0.7200,0.001941,4.78%
+4,ResNet-50 (Spatial),0.6879,0.001952,4.62%
+5,U-Net (Spatial),0.6704,0.001996,4.74%
+6,Standard ConvLSTM (Baseline),0.6506,0.001925,4.47%
+7,ResNet-101 (Spatial),0.6323,0.002102,4.94%
+
 Note: The monotonic degradation from ResNet-50 to ResNet-101 highlights the danger of over-parameterization under data scarcity (~2,000 training samples).
 
 🗺️ Visual Performance (Prediction vs Reality)
