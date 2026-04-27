@@ -5,7 +5,7 @@
 ---
 
 ## 📺 Project Presentation & Defense
-> **[Watch the AeroSense Video Defense Here]** *(Insert your YouTube/Google Drive link here)*
+> **[Watch the AeroSense Video Defense Here]** *https://youtu.be/p5TQ1uKW7Lg*
 
 ---
 
